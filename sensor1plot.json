@@ -27,10 +27,12 @@
   ],
 
   "axes":[
-  	{
-  		"scale":"x",
-  		"grid":true,
-  		"domain":false,
-  		"orient":"bottom",
-  		"tick"
-  	}]
+  	{"orient":"bottom", "scale":"x"},
+    {"orient":"left", "scale":"y"}
+  ],
+
+  "marks":[
+    {
+      "type":"line",
+      "from":{"data":"sensor"}
+    }]
