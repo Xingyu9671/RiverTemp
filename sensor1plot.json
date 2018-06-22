@@ -15,15 +15,22 @@
   	{
   		"name":"xscale",
   		"type":"band",
-  		"domain":{"data":"sensor","field":"category"},
+  		"domain":{"data":"sensor","field":"Time"},
   		"range":"width",
-  		"padding":0.05,
-  		"round":true
   	},
   	{
   		"name":"yscale",
-  		"domain":{"data":"sensor","field":"amount"},
-  		"nice":true,
+  		"type":"linear",
+  		"domain":{"data":"sensor","field":"Temp"},
   		"range":"height"
   	}
   ],
+
+  "axes":[
+  	{
+  		"scale":"x",
+  		"grid":true,
+  		"domain":false,
+  		"orient":"bottom",
+  		"tick"
+  	}]

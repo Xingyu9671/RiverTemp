@@ -1,0 +1,10 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+  "data": {"url": "https://raw.githubusercontent.com/Xingyu9671/RiverTemp/master/Sensor1.csv"},
+  "mark": "point",
+  "encoding": {
+    "x": {"field": "Time","type": "quantitative"},
+    "y": {"field": "Temp","type": "quantitative"}
+  }
+}
