@@ -1,23 +1,22 @@
 
+<!DOCTYPE html>
+<html>
 <head>
   <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.3"></script>
-
-  <script type="text/javascript">
-    var view;
-
-    vega.loader()
-      .load("bar.vg.json")
-      .then(function(data) { render(JSON.parse(data)); });
-
-    function render(spec) {
-      view = new vega.View(vega.parse(spec))
-        .renderer('canvas')  // set renderer (canvas or svg)
-        .initialize('#view') // initialize view within parent DOM container
-        .hover()             // enable hover encode set processing
-        .run();
-    }
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.15.0"></script>
 </head>
 <body>
-  <div id="view"></div>
+
+<div id="vis"></div>
+
+<script type="text/javascript">
+  var spec = "https://raw.githubusercontent.com/Xingyu9671/RiverTemp/master/bar.vg.json";
+  vegaEmbed('#vis', spec).then(function(result) {
+    // access view as result.view
+  }).catch(console.error);
+</script>
 </body>
+</html>
+
+
