@@ -6,7 +6,7 @@
   "data": [
     {
       "name": "data",
-      "url": "https://raw.githubusercontent.com/Xingyu9671/RiverTemp/master/data.csv",
+      "url": "https://github.com/Xingyu9671/RiverTemp/blob/master/data.csv",
       "format": {"type": "csv", "parse": "auto"}
     }
   ],
