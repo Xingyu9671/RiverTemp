@@ -39,8 +39,8 @@
   		"from":{"data":"data"},
   		"encode":{
   			"enter":{
-  				"x":{"scale":"x","field":"Air"},
-  				"y":{"scale":"y","field":"Water"}
+  				"x":{"scale":"xscale","field":"Air"},
+  				"y":{"scale":"yscale","field":"Water"}
   			}
   		}
   	}
