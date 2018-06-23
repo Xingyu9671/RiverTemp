@@ -40,8 +40,7 @@
   		"encode":{
   			"enter":{
   				"x":{"scale":"xscale","field":"Air"},
-  				"y":{"scale":"yscale","field":"Water"},
-          "size":{"value":0.0005}
+  				"y":{"scale":"yscale","field":"Water"}
   			}
   		}
   	}
