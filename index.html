@@ -1,12 +1,19 @@
+<!doctype html>
+
+<html lang="en">
 <head>
+  <meta charset="utf-8">
+  <title>Vega Test</title>
+
   <script src="https://cdn.jsdelivr.net/npm/vega@4.0.0-rc.3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2.5.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@3.15.0"></script>
 </head>
-<body>
-<div id="view"></div>
-<script>
-  vegaEmbed('#view', 'https://raw.githubusercontent.com/Xingyu9671/RiverTemp/master/sensor1plot.json');
-</script>
-</body>
 
+<body>
+  <div id="view"></div>
+
+  <script>
+    vegaEmbed('#view', 'http://0.0.0.0:8000/chart.json');
+  </script>
+</body>
+</html>
