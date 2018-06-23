@@ -8,7 +8,7 @@
   "data":[
   	{
   		"name":"data",
-  		"url": "",
+  		"url": "https://raw.githubusercontent.com/Xingyu9671/RiverTemp/master/air-water.csv",
       	"format": {"type": "csv", "parse": "auto"}
   	}
   ],
