@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v4.json",
+  "width": 450,
+  "height": 450,
+  "padding": 5,
+  "autosize": {"type": "fit", "resize": true},
+
+  "data":[
+  	{
+  		"name":"data",
+  		"url": "",
+      	"format": {"type": "csv", "parse": "auto"}
+  	}
+  ],
+
+  "scales":[
+  	{
+  		"name":"xscale",
+  		"type":"linear",
+  		"domain":{"data":"data","field":"Air"},
+  		"range":"width"
+  	},
+  	{
+  		"name":"yscale",
+  		"type":"linear",
+  		"domain":{"data":"data","field":"Water"},
+  		"range":"height"
+  	}
+  ],
+
+  "axes":[
+  	{"orient":"bottom","scale":"xscale"},
+  	{"orient":"left","scale":"yscale"}
+  ],
+
+  "marks":[
+  	{
+  		"type":"symbol",
+  		"from":{"data":"data"},
+  		"encode":{
+  			"enter":{
+  				"x":{"scale":"x","field":"Air"},
+  				"y":{"scale":"y","field":"Water"},
+  			}
+  		}
+  	}]
