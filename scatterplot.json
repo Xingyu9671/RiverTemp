@@ -41,7 +41,7 @@
   			"enter":{
   				"x":{"scale":"xscale","field":"Air"},
   				"y":{"scale":"yscale","field":"Water"},
-  				"size":{"value":50}
+  				"size":{"value":200}
   			}
   		}
   	}
